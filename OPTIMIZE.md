@@ -68,3 +68,10 @@ class Test2
 }
 ```
 - Ngoài ra có thể tận dụng có thể tận dụng bộ nhớ case của CPU. Khi lớp có nhiều thuộc tính khác nhau. Tuy nhiên cần duyệt và xử lý chỉ một hoặc ít thuộc tính của đối tượng một cách liên tục. Ta có thể tác thuốc tính đó ra khỏi lớp để tránh việc tải dữ liệu liên tục không cần thiết của cả đối tượng trong vòng for cũng như làm vậy sẽ tăng tốc độ đẩy dữ liệu cho cpu xử lý
+
+## 12. So sánh với số real
+
+Trục số trong khoa học máy tính là tròn, cũng gần như vậy với số thực trong việc máy tính tính toán sẽ có sai số. Vì vậy khi cần so sánh với độ chính xác cao nên so sánh với bù trừ của epsilon.
+```cpp
+std::fabs(x - y) <= std::numeric_limits<double>::epsilon();
+```

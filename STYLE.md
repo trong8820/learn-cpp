@@ -1,4 +1,4 @@
-# C++ 17 Stype
+# C++ Style
 
 ## 1. The #define Guard
 
@@ -73,4 +73,30 @@ Việc sử dụng prefix là không cần thiết vì sẽ khiến code dài h�
 
 Đối với hàm thì một số tên phổ biến bao gồm: `get/set`, `add/remove`, `create/destroy`, `start/stop`, `insert/delete`, `increment/decrement`, `old/new`, `begin/end`, `first/last`, `up/down`, `min/max`, `next/previous`, `open/close`, `show/hide`, `suspend/resume`, etc...
 
-Ngoài ra một số tên phổ biến như: `is`, `has`, `can`, `should`, `command`, `copy`, `compute`, `initialize`, `exists`, `read`, `make`, `build`, etc...
+Ngoài ra một số tên phổ biến như: `is`, `has`, `can`, `should`, `command`, `copy`, `compute`, `initialize`, `exists`, `read`, `make`, `build`, `find`, etc...
+
+## 4. Khai báo
+
+### Preprocessor
+```cpp
+#include  <stdio.h>     // Insert standard header file
+#include "myfile.h"     // Insert file in current directory
+#define X some text     // Replace X with some text
+#define F(a,b) a+b      // Replace F(1,2) with 1+2
+#define X \
+ some text              // Multiline definition
+#undef X                // Remove definition
+#if defined(X)          // Conditional compilation (#ifdef X)
+#if !defined(X)         // Conditional compilation (#ifndef X)
+#else
+#endif                  // Required after #if, #ifdef
+```
+
+### Literals
+```cpp
+255, 0377, 0xff         // decimal, octal, hex
+1l, 0xffl               // long
+1.2f                    // float
+1.2, 1.2e3              // double
+'a', "a"                // char, string
+```
