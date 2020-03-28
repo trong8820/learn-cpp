@@ -1,5 +1,9 @@
 # C++ Style
 
+Nguồn tham khảo:
+- https://developer.lsst.io/cpp/style.html
+- https://github.com/mortennobel/cpp-cheatsheet
+
 ## 1. The #define Guard
 
 Sử dụng `#define` thay vì `#pragma once`. Tuy rằng đa số các trình biên dịch đã hỗ trợ pragma cũng như cách dùng đơn giản và giảm thời gian biên dịch. Tuy nhiên hiện nay define vẫn được khuyến cáo. Sử dụng define linh hoạt hơn trao quyền quản lý cho lập trình viên điều này sẽ có lợi trong một số trường hợp phức tạp, gặp hệ thống tệp lạ trong khi pragma thì cố định. 
@@ -73,7 +77,7 @@ Việc sử dụng prefix là không cần thiết vì sẽ khiến code dài h�
 
 Đối với hàm thì một số tên phổ biến bao gồm: `get/set`, `add/remove`, `create/destroy`, `start/stop`, `insert/delete`, `increment/decrement`, `old/new`, `begin/end`, `first/last`, `up/down`, `min/max`, `next/previous`, `open/close`, `show/hide`, `suspend/resume`, etc...
 
-Ngoài ra một số tên phổ biến như: `is`, `has`, `can`, `should`, `command`, `copy`, `compute`, `initialize`, `exists`, `read`, `make`, `build`, `find`, etc...
+Ngoài ra một số tên phổ biến như: `is`, `has`, `can`, `should`, `command`, `copy`, `compute`, `initialize`, `exists`, `read`, `make`, `build`, `find`, `expects`, etc...
 
 ## 4. Khai báo
 
